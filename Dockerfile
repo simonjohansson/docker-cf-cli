@@ -2,6 +2,7 @@ FROM debian
 MAINTAINER Simon Johansson <simon@simonjohansson.com>
 
 VOLUME ["/data"]
+WORKDIR ["/data"]
 
 RUN apt-get update && apt-get -y install wget ca-certificates
 
